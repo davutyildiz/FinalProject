@@ -1,16 +1,7 @@
 package com.hrms.steps;
 
-import org.junit.Assert;
-
-import com.hrms.pages.AddEmployeePageElements;
-import com.hrms.pages.DashboardPageElement;
-import com.hrms.pages.LoginPageElements;
-import com.hrms.pages.PersonaDetailsPageElements;
-import com.hrms.testbase.BaseClass;
 import com.hrms.utils.CommonMethods;
-import com.hrms.utils.ConfigsReader;
 
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 

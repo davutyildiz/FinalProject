@@ -18,7 +18,7 @@ public class BaseClass {
 			extension = ".exe";
 		
 		ConfigsReader.readProperties(Constants.CREDENTIALS_FILEPATH);
-		
+
 		switch (ConfigsReader.getProperty("browser").toLowerCase()) {
 
 		case "chrome":
