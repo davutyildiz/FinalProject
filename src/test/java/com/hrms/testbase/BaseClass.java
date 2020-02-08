@@ -13,17 +13,20 @@ public class BaseClass {
 
 	public static WebDriver driver;
 	public static void setUp() {
+		String extension = "";
+		if (Constants.OS_NAME.contains("Windows"))
+			extension = ".exe";
 		
 		ConfigsReader.readProperties(Constants.CREDENTIALS_FILEPATH);
 		
 		switch (ConfigsReader.getProperty("browser").toLowerCase()) {
 
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH);
+			System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH + extension);
 			driver = new ChromeDriver();
 			break;
 		case "firefox":
-			System.setProperty("webdriver.gecko.driver", Constants.GECKO_DRIVER_PATH);
+			System.setProperty("webdriver.gecko.driver", Constants.GECKO_DRIVER_PATH + extension);
 			driver = new FirefoxDriver();
 			break;
 		default:
