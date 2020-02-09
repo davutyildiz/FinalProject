@@ -5,7 +5,7 @@ And I click on login button
 And I go to employee list
 And I find and click the employee using ID "9099"
 
-  @smoke
+  @sample
   Scenario: Modify Empoyee Personal Details
     When I click on save button
     
