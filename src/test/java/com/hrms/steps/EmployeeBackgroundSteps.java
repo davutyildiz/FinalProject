@@ -12,7 +12,7 @@ public class EmployeeBackgroundSteps extends CommonMethods {
 		sendText(login.username, "Admin");
 		sendText(login.password, "Syntax@123");
 	}
-	
+
 	@And("I click on login button")
 	public void i_click_on_login_button() throws InterruptedException {
 		click(login.loginBtn);

@@ -65,17 +65,16 @@ public class AddEmployeePageElements {
 	public WebElement DofB  ;
 	
 	@FindBy(id= "personal_optGender_2")
-	public WebElement Gender  ;
+	public WebElement Gender;
 	
 	@FindBy(id= "personal_cmbMarital")
-	public WebElement MaritalStatus  ;
+	public WebElement MaritalStatus;
 	
 	@FindBy(id= "btnSave")
-	public WebElement saveButton ;
+	public WebElement saveButton;
 	
 	@FindBy(id= "btnSave")
-	public WebElement editButton ;
-	
+	public WebElement editButton;
 	
 	public AddEmployeePageElements() {
 		PageFactory.initElements(BaseClass.driver, this);
