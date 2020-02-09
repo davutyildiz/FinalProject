@@ -6,11 +6,7 @@ import com.hrms.pages.DonaldJTrumpJobPageElements;
 import com.hrms.pages.EmployeeListPageElements;
 import com.hrms.pages.LeaveListPageElements;
 import com.hrms.pages.LoginPageElements;
-<<<<<<< HEAD
-import com.hrms.pages.PersonaDetailsPageElements;
-import com.hrms.pages.ReportsPageElements;
 import com.hrms.pages.SalaryPage;
-=======
 import com.hrms.pages.PersonalDetailsPageElements;
 import com.hrms.pages.TrumpElementInTable;
 ///import com.hrms.pages.ReportsPageElements;
