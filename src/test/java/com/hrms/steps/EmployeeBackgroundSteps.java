@@ -3,7 +3,6 @@ package com.hrms.steps;
 import com.hrms.utils.CommonMethods;
 
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.When;
 
 public class EmployeeBackgroundSteps extends CommonMethods {
 
@@ -19,8 +18,9 @@ public class EmployeeBackgroundSteps extends CommonMethods {
 	}
 
 	@Given("I go to employee list")
-	public void i_go_to_employee_list() {
+	public void i_go_to_employee_list() throws Throwable {
 		click(dash.pim);
+		Thread.sleep(2000);
 	}
 
 	@Given("I find and click the employee using ID {string}")

@@ -79,11 +79,6 @@ public class LoginPageElements extends CommonMethods {
 	public LoginPageElements() {
 		PageFactory.initElements(BaseClass.driver, this);
 		
-		
-		
-		
-		
-		
 	}
 	
 	
