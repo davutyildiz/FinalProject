@@ -20,6 +20,8 @@ public class AddDependent extends CommonMethods {
 
 	@When("Add Name of Dependent")
 	public void add_Name_of_Dependent() {
+		sendText(dependent.dependent_name,"Ivana Trump");
+	
 	}
 
 	@When("Choose Child  Relationship Options")

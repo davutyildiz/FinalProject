@@ -16,6 +16,10 @@ public class DependentPageElements extends CommonMethods{
 	public WebElement btnAddDependent;
 	
 	
+	@FindBy(id = "dependent_name")
+	public WebElement dependent_name;
+	
+	
 	public DependentPageElements() {
 		PageFactory.initElements(BaseClass.driver, this);
 	}
