@@ -28,7 +28,6 @@ public class PageInitializeAll extends BaseClass {
 	protected static TrumpElementInTable trumpElementInTable;
 	protected static LeaveListPageElements leave;
 	protected static DonaldJTrumpJobPageElements donaldJTrumpJob;
-	/// protected static AddEmployeePageElements add;
 
 	protected static void initializeAll() {
 		login = new LoginPageElements();
@@ -38,9 +37,7 @@ public class PageInitializeAll extends BaseClass {
 		leave = new LeaveListPageElements();
 		donaldJTrumpJob = new DonaldJTrumpJobPageElements();
 
-		/// add = new AddEmployeePageElements();
 		empEContact = new  EmergencyContactsPageElements();
-		leave = new LeaveListPageElements();
 
 		empQualification = new EmpQualificationPageElements();
 		person = new PersonalDetailsPageElements();
