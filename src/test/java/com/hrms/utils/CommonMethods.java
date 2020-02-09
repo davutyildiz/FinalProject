@@ -39,7 +39,7 @@ public class CommonMethods extends PageInitializeAll {
 		} catch (NoAlertPresentException e) {
 			System.out.println("Alert is not present");
 		}
-	}
+ }
 	/**
 	 * This methods will dismiss the alert
 	 * 

@@ -75,7 +75,7 @@ public class AddEmployeePageElements {
 	
 	@FindBy(id= "btnSave")
 	public WebElement editButton;
-	
+
 	public AddEmployeePageElements() {
 		PageFactory.initElements(BaseClass.driver, this);
 	}
