@@ -7,14 +7,14 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="src/test/resources/features"
 		,glue="com/hrms/steps"
-		,dryRun=false
+		,dryRun=true
 		,plugin= {"pretty"}
 		,monochrome=true
-		,tags= {"@smoke"}
+		,tags= {"@smoke123"}
 		)
 
-public class TestRunner {
-	
-	
 
+
+
+public class TestRunner {
 }
