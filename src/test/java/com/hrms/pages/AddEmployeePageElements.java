@@ -1,5 +1,7 @@
 package com.hrms.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -7,13 +9,13 @@ import org.openqa.selenium.support.PageFactory;
 import com.hrms.testbase.BaseClass;
 
 public class AddEmployeePageElements {
-	@FindBy(id = "firstName")
+	@FindBy(id = "personal_txtEmpFirstName")
 	public WebElement firstName;
 
-	@FindBy(id = "middleName")
+	@FindBy(id = "personal_txtEmpMiddleName")
 	public WebElement middleName;
 	
-	@FindBy(id = "lastName")
+	@FindBy(id = "personal_txtEmpLastName")
 	public WebElement lastName;
 	
 	@FindBy(id = "chkLogin")
@@ -64,8 +66,8 @@ public class AddEmployeePageElements {
 	@FindBy(id= "personal_DOB")
 	public WebElement DofB  ;
 	
-	@FindBy(id= "personal_optGender_2")
-	public WebElement Gender;
+	@FindBy(name= "personal[optGender]")
+	public List<WebElement> Genders;
 	
 	@FindBy(id= "personal_cmbMarital")
 	public WebElement MaritalStatus;

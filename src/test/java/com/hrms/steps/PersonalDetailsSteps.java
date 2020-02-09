@@ -10,7 +10,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.cucumber.datatable.DataTable;
 
-public class PersonalDeteailsStep3 extends CommonMethods{
+public class PersonalDetailsSteps extends CommonMethods{
 	@When("I click on edit button")
 	public void i_click_on_edit_button() throws InterruptedException {
 		click(addEmployee.editButton);
@@ -26,8 +26,8 @@ public void i_enter_employee_names(DataTable dataTable) {
 	
    }
 }
-@And("I enter employee deteails")
-public void i_enter_employee_deteails(DataTable dataTables) {
+@And("I enter employee details")
+public void i_enter_employee_details(DataTable dataTables) {
 	 List<Map<String,String>> variables=dataTables.asMaps();
 	 for(Map<String,String> variable:variables) {
 		 		sendText(addEmployee.DLNumber, variable.get("DLNumber"));
@@ -39,7 +39,7 @@ public void i_enter_employee_deteails(DataTable dataTables) {
 		 		sendText(addEmployee.MilitaryService, variable.get("MilitaryService"));
 		 		sendText(addEmployee.Nationality, variable.get("Nationality"));
 		 		sendText(addEmployee.DofB, variable.get("DofB"));
-		 		//clickRadio(add.Gender,variable.get("Gender"));
+		 		clickRadio(addEmployee.Genders,variable.get("Male"));
 		 		sendText(addEmployee.MaritalStatus, variable.get("MaritalStatus"));	
 	 }
 }

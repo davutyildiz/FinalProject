@@ -13,7 +13,7 @@ public class EmployeeBackgroundSteps extends CommonMethods {
 		sendText(login.password, "Syntax@123");
 	}
 
-	@And("I click on login button")
+	@Given("I click on login button")
 	public void i_click_on_login_button() throws InterruptedException {
 		click(login.loginBtn);
 		Thread.sleep(2000);
@@ -24,20 +24,20 @@ public class EmployeeBackgroundSteps extends CommonMethods {
 		click(dash.pim);
 		Thread.sleep(2000);
 	}
-	
-	@And("I find and click the employee using ID {string}")
+
+	@Given("I find and click the employee using ID {string}")
 	public void i_find_and_click_the_employee_using_ID(String ID) throws InterruptedException {
+		Thread.sleep(1000);
 		sendText(employeeList.empId, ID);
 		click(employeeList.searchBtn);
+		Thread.sleep(1000);
 		click(employeeList.tableCell);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
-/*	
-  @When("I click on save button")
-	public void i_click_on_save_button() {
-	    click();
-	}
-	
-*/
+	/*
+	 * @When("I click on save button") public void i_click_on_save_button() {
+	 * click(); }
+	 * 
+	 */
 }
