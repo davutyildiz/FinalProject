@@ -1,6 +1,6 @@
 
 @empQual
-Feature: employee's qualifications
+Feature: Employee Qualifications
  As an admin I should be able to add employee's qualifications
 
   Background: 
