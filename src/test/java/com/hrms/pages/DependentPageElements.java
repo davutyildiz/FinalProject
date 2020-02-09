@@ -15,9 +15,11 @@ public class DependentPageElements extends CommonMethods{
 	@FindBy(id = "btnAddDependent")
 	public WebElement btnAddDependent;
 	
-	
 	@FindBy(id = "dependent_name")
 	public WebElement dependent_name;
+	
+	@FindBy(id = "dependent_relationshipType")
+	public WebElement dependent_relationshipType;
 	
 	
 	public DependentPageElements() {

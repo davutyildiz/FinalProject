@@ -1,40 +1,46 @@
 package com.hrms.testbase;
 
-import com.hrms.pages.AddEmployeePageElements;
 import com.hrms.pages.DashboardPageElement;
+import com.hrms.pages.DonaldJTrumpJobPageElements;
+import com.hrms.pages.EmployeeListPageElements;
+import com.hrms.pages.LeaveListPageElements;
+import com.hrms.pages.LoginPageElements;
+import com.hrms.pages.PersonalDetailsPageElements;
+import com.hrms.pages.TrumpElementInTable;
+///import com.hrms.pages.ReportsPageElements;
+///import com.hrms.pages.AddEmployeePageElements;
 
 import com.hrms.pages.EmergencyContactsPageElements;
 
 import com.hrms.pages.EmpQualificationPageElements;
 import com.hrms.pages.DependentPageElements;
 
-import com.hrms.pages.EmployeeListPageElements;
-import com.hrms.pages.LeaveListPageElements;
-import com.hrms.pages.LoginPageElements;
-import com.hrms.pages.ReportsPageElements;
-
 public class PageInitializeAll extends BaseClass {
 	protected static DashboardPageElement dash;
 	protected static LoginPageElements login;
 	protected static EmployeeListPageElements employeeList;
+
 	protected static EmergencyContactsPageElements empEContact;
-	protected static AddEmployeePageElements add;
-	protected static LeaveListPageElements leave;
-	protected static EmpQualificationPageElements person;
-	protected static ReportsPageElements report;
+	protected static EmpQualificationPageElements empQualification;
+	protected static PersonalDetailsPageElements person;
 
 	protected static DependentPageElements dependent;
+	protected static TrumpElementInTable trumpElementInTable;
+	protected static LeaveListPageElements leave;
+	protected static DonaldJTrumpJobPageElements donaldJTrumpJob;
 
-	public static void initializeAll() {
+	protected static void initializeAll() {
 		login = new LoginPageElements();
 		dash = new DashboardPageElement();
 		employeeList = new EmployeeListPageElements();
-		empEContact = new  EmergencyContactsPageElements();
-		add = new AddEmployeePageElements();
+		trumpElementInTable = new TrumpElementInTable();
 		leave = new LeaveListPageElements();
+		donaldJTrumpJob = new DonaldJTrumpJobPageElements();
 
-		person = new EmpQualificationPageElements();
-		report = new ReportsPageElements();
+		empEContact = new  EmergencyContactsPageElements();
+
+		empQualification = new EmpQualificationPageElements();
+		person = new PersonalDetailsPageElements();
 		dependent = new DependentPageElements();
 
 	}
