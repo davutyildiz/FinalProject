@@ -7,6 +7,7 @@ import com.hrms.pages.LeaveListPageElements;
 import com.hrms.pages.LoginPageElements;
 import com.hrms.pages.PersonaDetailsPageElements;
 import com.hrms.pages.ReportsPageElements;
+import com.hrms.pages.SalaryPage;
 
 public class PageInitializeAll extends BaseClass {
 	protected static DashboardPageElement dash;
@@ -18,6 +19,9 @@ public class PageInitializeAll extends BaseClass {
 	protected static LeaveListPageElements leave;
 	protected static PersonaDetailsPageElements person;
 	protected static ReportsPageElements report;
+	
+	protected static SalaryPage salary;
+
 
 	public static void initializeAll() {
 		login = new LoginPageElements();
@@ -29,6 +33,7 @@ public class PageInitializeAll extends BaseClass {
 		leave = new LeaveListPageElements();
 		person = new PersonaDetailsPageElements();
 		report=new ReportsPageElements();
+		salary = new SalaryPage();
 
 	}
 }
