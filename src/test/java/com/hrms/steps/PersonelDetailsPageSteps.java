@@ -25,10 +25,11 @@ public class PersonelDetailsPageSteps extends CommonMethods{
 	public void i_enter_Work_details() {
 	 sendText(person.companyName, "PioneerAcademy");
 	 sendText(person.jobtitle,"IT manager");
+	 click(person.experienceDateFrom);
+
 	 Select selectMonth = new Select(person.WorkExpFromMonth);
 	 selectMonth.selectByVisibleText("May");
-//	 click(person.experienceDateFrom);
-//	 click(person.WorkExpFromMonth);
+	 
 	
 	 
 	 

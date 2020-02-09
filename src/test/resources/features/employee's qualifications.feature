@@ -1,4 +1,5 @@
 
+@empQual
 Feature: employee's qualifications
  As an admin I should be able to add employee's qualifications
 
