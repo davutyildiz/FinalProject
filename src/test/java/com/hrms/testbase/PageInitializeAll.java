@@ -2,6 +2,7 @@ package com.hrms.testbase;
 
 import com.hrms.pages.AddEmployeePageElements;
 import com.hrms.pages.DashboardPageElement;
+import com.hrms.pages.EmergencyContactsPageElements;
 import com.hrms.pages.EmployeeListPageElements;
 import com.hrms.pages.LeaveListPageElements;
 import com.hrms.pages.LoginPageElements;
@@ -12,8 +13,8 @@ public class PageInitializeAll extends BaseClass {
 	protected static DashboardPageElement dash;
 	protected static LoginPageElements login;
 	protected static EmployeeListPageElements employeeList;
-
-
+	protected static EmergencyContactsPageElements empEContact;
+	
 	protected static AddEmployeePageElements add;
 	protected static LeaveListPageElements leave;
 	protected static PersonaDetailsPageElements person;
@@ -23,7 +24,7 @@ public class PageInitializeAll extends BaseClass {
 		login = new LoginPageElements();
 		dash = new DashboardPageElement();
 		employeeList = new EmployeeListPageElements();
-		
+		empEContact = new  EmergencyContactsPageElements();
 		
 		add = new AddEmployeePageElements();
 		leave = new LeaveListPageElements();
