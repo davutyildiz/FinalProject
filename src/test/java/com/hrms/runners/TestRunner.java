@@ -13,8 +13,8 @@ import cucumber.api.junit.Cucumber;
 		,tags= {"@smoke"}
 		)
 
-public class TestRunner {
-	
-	
 
+
+
+public class TestRunner {
 }
