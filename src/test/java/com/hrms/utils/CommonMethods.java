@@ -39,8 +39,7 @@ public class CommonMethods extends PageInitializeAll {
 		} catch (NoAlertPresentException e) {
 			System.out.println("Alert is not present");
 		}
-	}
-
+ }
 	/**
 	 * This methods will dismiss the alert
 	 * 
@@ -301,7 +300,7 @@ public class CommonMethods extends PageInitializeAll {
 			}
 		}
 	}
-	
+
 	/**
 	 * This method will select the specified day from Calendar Table
 	 * @param table
