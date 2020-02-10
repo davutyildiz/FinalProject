@@ -1,5 +1,6 @@
 package com.hrms.testbase;
 
+import com.hrms.pages.ContactDetailsPageElements;
 import com.hrms.pages.DashboardPageElement;
 import com.hrms.pages.DonaldJTrumpJobPageElements;
 import com.hrms.pages.EmployeeListPageElements;
@@ -28,6 +29,8 @@ public class PageInitializeAll extends BaseClass {
 	protected static TrumpElementInTable trumpElementInTable;
 	protected static LeaveListPageElements leave;
 	protected static DonaldJTrumpJobPageElements donaldJTrumpJob;
+	protected static ContactDetailsPageElements contactDetails;
+	
 
 	protected static void initializeAll() {
 		login = new LoginPageElements();
@@ -42,6 +45,7 @@ public class PageInitializeAll extends BaseClass {
 		empQualification = new EmpQualificationPageElements();
 		person = new PersonalDetailsPageElements();
 		dependent = new DependentPageElements();
+		contactDetails = new ContactDetailsPageElements();
 
 	}
 }

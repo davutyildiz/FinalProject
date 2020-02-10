@@ -29,6 +29,7 @@ public class EmployeeBackgroundSteps extends CommonMethods {
 	public void i_find_and_click_the_employee_using_ID(String ID) throws InterruptedException {
 		sendText(employeeList.empId, ID);
 		click(employeeList.searchBtn);
+		Thread.sleep(3000);
 		click(employeeList.tableCell);
 		Thread.sleep(2000);
 	}
