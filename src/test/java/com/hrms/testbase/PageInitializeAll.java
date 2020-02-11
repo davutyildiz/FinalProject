@@ -14,8 +14,6 @@ import com.hrms.pages.LoginPageElements;
 import com.hrms.pages.PersonalDetailsPageElements;
 import com.hrms.pages.SalaryPage;
 import com.hrms.pages.TrumpElementInTable;
-///import com.hrms.pages.ReportsPageElements;
-///import com.hrms.pages.AddEmployeePageElements;
 
 public class PageInitializeAll extends BaseClass {
 	protected static DashboardPageElement dash;

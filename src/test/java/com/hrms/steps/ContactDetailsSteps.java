@@ -18,7 +18,7 @@ public class ContactDetailsSteps extends CommonMethods {
 		click(contactDetails.conSave_editBtn);
 	}
 
-	@When("I add adress details")
+	@And("I add adress details")
 	public void i_add_adress_details(DataTable addContAdress) throws InterruptedException {
 		List<Map<String, String>> addContAdressList = addContAdress.asMaps();
 
@@ -26,11 +26,17 @@ public class ContactDetailsSteps extends CommonMethods {
 
 			sendText(contactDetails.conAdress1, map.get("Address Street 1"));
 			sendText(contactDetails.conCity, map.get("City"));
-			sendText(contactDetails.conProvince, map.get("State/Province"));
-			sendText(contactDetails.conZipCode, map.get("Zip/Postal Code"));
+
+			Thread.sleep(4000);
+			selectDropddownValue(contactDetails.conCountry, map.get("Country"));
+			Thread.sleep(5000);		
+
+			selectDropddownValue(contactDetails.conState, map.get("State/Province"));
 			Thread.sleep(4000);
 
-			selectDropddownValue(contactDetails.conCountry, map.get("Country"));
+			sendText(contactDetails.conZipCode, map.get("Zip/Postal Code"));
+			
+			
 
 		}
 
@@ -41,13 +47,14 @@ public class ContactDetailsSteps extends CommonMethods {
 		sendText(contactDetails.conMobile, "+15512501234");
 	}
 
-	@And("I insert work mail")
+	@Then("I insert work mail")
 	public void i_insert_work_mail() {
 		sendText(contactDetails.conMail, "DonJT@usa.com");
 	}
 
-	@Then("I click on Save button")
-	public void i_click_on_Save_button() {
+	@Then("I click on conDet_Save button")
+	public void i_click_on_conDet_Save_button() {
 		click(contactDetails.conSave_editBtn);
 	}
+	
 }

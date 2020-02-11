@@ -20,8 +20,8 @@ public class ContactDetailsPageElements {
 	@FindBy(id = "contact_city")
 	public WebElement conCity;
 
-	@FindBy(id = "contact_province")
-	public WebElement conProvince;
+	@FindBy(id = "contact_state")
+	public WebElement conState;
 
 	@FindBy(id = "contact_emp_zipcode")
 	public WebElement conZipCode;

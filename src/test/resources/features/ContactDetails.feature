@@ -16,4 +16,4 @@ Feature: Title of your feature
       | Prospect Ave     | Hackensack | New Jersey     |           07601 | United States |
     Then I insert mobile number
     And I insert work mail
-    Then I click on Save button
+    Then I click on conDet_Save button
