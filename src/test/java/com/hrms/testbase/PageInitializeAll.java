@@ -1,21 +1,19 @@
 package com.hrms.testbase;
 
+
 import com.hrms.pages.AddEmployeePageElements;
+import com.hrms.pages.ContactDetailsPageElements;
 import com.hrms.pages.DashboardPageElement;
+import com.hrms.pages.DependentPageElements;
 import com.hrms.pages.DonaldJTrumpJobPageElements;
+import com.hrms.pages.EmergencyContactsPageElements;
+import com.hrms.pages.EmpQualificationPageElements;
 import com.hrms.pages.EmployeeListPageElements;
 import com.hrms.pages.LeaveListPageElements;
 import com.hrms.pages.LoginPageElements;
-import com.hrms.pages.SalaryPage;
 import com.hrms.pages.PersonalDetailsPageElements;
+import com.hrms.pages.SalaryPage;
 import com.hrms.pages.TrumpElementInTable;
-///import com.hrms.pages.ReportsPageElements;
-///import com.hrms.pages.AddEmployeePageElements;
-
-import com.hrms.pages.EmergencyContactsPageElements;
-
-import com.hrms.pages.EmpQualificationPageElements;
-import com.hrms.pages.DependentPageElements;
 
 public class PageInitializeAll extends BaseClass {
 	protected static DashboardPageElement dash;
@@ -33,7 +31,12 @@ public class PageInitializeAll extends BaseClass {
 	protected static SalaryPage salary;
 
 	protected static DonaldJTrumpJobPageElements donaldJTrumpJob;
+
+	protected static ContactDetailsPageElements contactDetails;
+	
+
 	protected static AddEmployeePageElements addEmployee;
+
 
 	protected static void initializeAll() {
 		login = new LoginPageElements();
@@ -51,7 +54,11 @@ public class PageInitializeAll extends BaseClass {
 		empQualification = new EmpQualificationPageElements();
 		person = new PersonalDetailsPageElements();
 		dependent = new DependentPageElements();
+
+		contactDetails = new ContactDetailsPageElements();
+
 		addEmployee = new AddEmployeePageElements();
+
 
 	}
 }
