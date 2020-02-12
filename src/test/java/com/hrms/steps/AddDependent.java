@@ -21,9 +21,9 @@ public class AddDependent extends CommonMethods {
 		Thread.sleep(5000);
 	}
 
-	@When("Add Name of Dependent")
-	public void add_Name_of_Dependent() {
-		sendText(dependent.dependent_name, "Ivana Trump");
+	@When("Add Name of Dependent {string}")
+	public void add_Name_of_Dependent(String string) {
+		sendText(dependent.dependent_name, string);
 
 	}
 
@@ -51,8 +51,9 @@ public class AddDependent extends CommonMethods {
 
 	@When("Choose Other  Relationship Options")
 	public void choose_Other_Relationship_Options() throws InterruptedException {
+		
 		sendText(dependent.dependent_relationship, "wife");
 		Thread.sleep(3000);
-		
+
 	}
 }
