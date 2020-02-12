@@ -15,8 +15,6 @@ import cucumber.api.junit.Cucumber;
 		,tags= {"@smoke123"}
 		)
 
-
-
 public class SelmaRunner {
 
 }
