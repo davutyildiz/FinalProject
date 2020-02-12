@@ -10,11 +10,8 @@ import cucumber.api.junit.Cucumber;
 		,dryRun=false
 		,plugin= {"pretty"}
 		,monochrome=true
-		,tags= {"@smoke19"}
+		,tags= {"@TaxExamption"}
 		)
 
-
-
-
-public class TestRunnerDavidBrown {
+public class TaxExemptionsRunner {
 }

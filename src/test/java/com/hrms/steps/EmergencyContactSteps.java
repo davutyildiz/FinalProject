@@ -54,7 +54,14 @@ public class EmergencyContactSteps extends CommonMethods {
 	
 	@Then("I click on upload file button")
 	public void i_click_on_upload_file_button() throws InterruptedException {
-		click(empEContact.UploadFile);
+		empEContact.UploadFile.sendKeys("/Users/user/Documents/hello.xlsx");
+		Thread.sleep(3000);
+	}
+	
+	@Then("I click on upload file to save")
+	public void i_click_on_upload_file_to_save() throws InterruptedException {
+		click(empEContact.UploadFileSave); 
+		
 		Thread.sleep(3000);
 	}
 	

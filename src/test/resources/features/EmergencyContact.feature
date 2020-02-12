@@ -14,6 +14,7 @@ Feature: Emergency Contact
     And I click on save to save emergency contact
 		Then I click on add attachment for emergency contact
    And I click on upload file button
+   And I click on upload file to save
    
     Examples: 
       | Name        | Relationship | Home Telephone | Mobile       | Work Telephone |
