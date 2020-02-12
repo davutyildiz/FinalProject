@@ -1,6 +1,9 @@
 package com.hrms.steps;
 
+import org.openqa.selenium.support.ui.Select;
+
 import com.hrms.utils.CommonMethods;
+
 import cucumber.api.java.en.When;
 
 public class AddDependent extends CommonMethods {
@@ -20,19 +23,36 @@ public class AddDependent extends CommonMethods {
 
 	@When("Add Name of Dependent")
 	public void add_Name_of_Dependent() {
-		sendText(dependent.dependent_name,"Ivana Trump");
-	
+		sendText(dependent.dependent_name, "Ivana Trump");
+
 	}
 
 	@When("Choose Child  Relationship Options")
-	public void choose_Child_Relationship_Options() {
+	public void choose_Child_Relationship_Options() throws InterruptedException {
+		click(dependent.dependent_relationshipType);
+		Select relation = new Select(dependent.dependent_relationshipType);
+		relation.selectByVisibleText("Child");
+		Thread.sleep(2000);
 	}
 
 	@When("Add DOB of Dependent {string}")
-	public void add_DOB_of_Dependent(String string) {
+	public void add_DOB_of_Dependent(String string) throws InterruptedException {
+		sendText(dependent.dependent_dateOfBirth, string);
+		Thread.sleep(2000);
+
 	}
 
 	@When("Click Save on Add Dependent Page")
-	public void click_Save_on_Add_Dependent_Page() {
+	public void click_Save_on_Add_Dependent_Page() throws InterruptedException {
+		click(dependent.btnSaveDependent);
+		Thread.sleep(3000);
+
+	}
+
+	@When("Choose Other  Relationship Options")
+	public void choose_Other_Relationship_Options() throws InterruptedException {
+		sendText(dependent.dependent_relationship, "wife");
+		Thread.sleep(3000);
+		
 	}
 }

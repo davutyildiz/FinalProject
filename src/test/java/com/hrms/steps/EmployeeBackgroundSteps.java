@@ -2,7 +2,6 @@ package com.hrms.steps;
 
 import com.hrms.utils.CommonMethods;
 
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 
 public class EmployeeBackgroundSteps extends CommonMethods {
@@ -30,7 +29,9 @@ public class EmployeeBackgroundSteps extends CommonMethods {
 		Thread.sleep(1000);
 		sendText(employeeList.empId, ID);
 		click(employeeList.searchBtn);
-		Thread.sleep(1000);
+
+		Thread.sleep(3000);
+
 		click(employeeList.tableCell);
 		Thread.sleep(1000);
 	}

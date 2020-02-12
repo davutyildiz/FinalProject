@@ -3,6 +3,7 @@ package com.hrms.steps;
 import com.hrms.utils.CommonMethods;
 
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class EmergencyContactSteps extends CommonMethods {
@@ -43,5 +44,19 @@ public class EmergencyContactSteps extends CommonMethods {
 		click(empEContact.SaveEContactBtn);   
 
 	}
+	
+	@Then("I click on add attachment for emergency contact")
+	public void i_click_on_add_attachment_for_emergency_contact() throws InterruptedException {
+	    click(empEContact.AddAttachmentBtn);
+	    Thread.sleep(3000);
+		
+	}
+	
+	@Then("I click on upload file button")
+	public void i_click_on_upload_file_button() throws InterruptedException {
+		click(empEContact.UploadFile);
+		Thread.sleep(3000);
+	}
+	
 	
 }
