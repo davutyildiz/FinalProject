@@ -18,42 +18,29 @@ public class PageInitializeAll extends BaseClass {
 	protected static DashboardPageElement dash;
 	protected static LoginPageElements login;
 	protected static EmployeeListPageElements employeeList;
-
 	protected static EmergencyContactsPageElements empEContact;
 	protected static EmpQualificationPageElements empQualification;
 	protected static PersonalDetailsPageElements person;
-
 	protected static DependentPageElements dependent;
 	protected static TrumpElementInTable trumpElementInTable;
 	protected static LeaveListPageElements leave;
-
 	protected static SalaryPage salary;
-
 	protected static DonaldJTrumpJobPageElements donaldJTrumpJob;
-
 	protected static ContactDetailsPageElements contactDetails;
-
 	protected static AddEmployeePageElements addEmployee;
-
 	protected static void initializeAll() {
 		login = new LoginPageElements();
 		dash = new DashboardPageElement();
 		employeeList = new EmployeeListPageElements();
 		trumpElementInTable = new TrumpElementInTable();
 		leave = new LeaveListPageElements();
-
 		salary = new SalaryPage();
-
 		donaldJTrumpJob = new DonaldJTrumpJobPageElements();
-
 		empEContact = new EmergencyContactsPageElements();
-
 		empQualification = new EmpQualificationPageElements();
 		person = new PersonalDetailsPageElements();
 		dependent = new DependentPageElements();
-
 		contactDetails = new ContactDetailsPageElements();
-
 		addEmployee = new AddEmployeePageElements();
 
 	}

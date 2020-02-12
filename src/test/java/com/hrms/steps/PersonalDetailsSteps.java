@@ -3,6 +3,8 @@ package com.hrms.steps;
 import java.util.List;
 import java.util.Map;
 
+import org.openqa.selenium.WebElement;
+
 import com.hrms.utils.CommonMethods;
 
 import cucumber.api.java.en.And;
@@ -37,10 +39,11 @@ public void i_enter_employee_details(DataTable dataTables) {
 		 		sendText(addEmployee.SIN, variable.get("SIN"));
 		 		sendText(addEmployee.NickName, variable.get("NickName"));
 		 		sendText(addEmployee.MilitaryService, variable.get("MilitaryService"));
-		 		sendText(addEmployee.Nationality, variable.get("Nationality"));
+		 		
+		 		selectDropddownValue(addEmployee.Nationality, variable.get("Nationality"));
 		 		sendText(addEmployee.DofB, variable.get("DofB"));
 		 		clickRadio(addEmployee.Genders,variable.get("Male"));
-		 		sendText(addEmployee.MaritalStatus, variable.get("MaritalStatus"));	
+		 		selectDropddownValue(addEmployee.MaritalStatus, variable.get("MaritalStatus"));	
 	 }
 }
 
@@ -50,6 +53,4 @@ public void i_click_on_Save_button() throws InterruptedException {
 	Thread.sleep(30000);
     click(addEmployee.saveButton);
 }
-
-
 }

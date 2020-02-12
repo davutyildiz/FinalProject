@@ -55,16 +55,16 @@ public class AddEmployeePageElements {
 	public WebElement  SIN;
 
 	@FindBy(id= "personal_txtEmpNickName")
-	public WebElement NickName ;
+	public WebElement NickName;
 	
 	@FindBy(id= "personal_txtMilitarySer")
 	public WebElement  MilitaryService;
 	
 	@FindBy(id= "personal_cmbNation")
-	public WebElement Nationality ;
+	public WebElement Nationality;
 	
 	@FindBy(id= "personal_DOB")
-	public WebElement DofB  ;
+	public WebElement DofB;
 	
 	@FindBy(name= "personal[optGender]")
 	public List<WebElement> Genders;

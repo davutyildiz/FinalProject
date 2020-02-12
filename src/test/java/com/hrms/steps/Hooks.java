@@ -15,7 +15,6 @@ public class Hooks extends CommonMethods {
 		setUp();
 		PageInitializeAll.initializeAll();
 	}
-
 	@After
 	public void end(Scenario scenario) {
 		System.out.println("Ending scenario " + scenario.getName());
@@ -29,3 +28,4 @@ public class Hooks extends CommonMethods {
 		tearDown();
 	}
 }
+
