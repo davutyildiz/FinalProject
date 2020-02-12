@@ -18,7 +18,7 @@ public class AddJobsDetailsSteps extends CommonMethods {
 	@Given("I click on the Job button on the left")
 	public void i_click_on_the_Job_button_on_the_left() throws InterruptedException {
 
-		click(person.jobBtn);
+		jsClick(person.jobBtn);
 		Thread.sleep(2000);
 
 	}
@@ -47,24 +47,18 @@ public class AddJobsDetailsSteps extends CommonMethods {
 	}
 
 	@Given("I click on the Employment Status dropdown menu")
-	public void i_click_on_the_Employment_Status_dropdown_menu() {
-		
-		click(donaldJTrumpJob.empStatusDD);
-
-	}
-
-	@Given("I click on the Employee")
-	public void i_click_on_the_Employee() {
+	public void i_click_on_the_Employment_Status_dropdown_menu() throws InterruptedException {
+		Select sel = new Select(donaldJTrumpJob.empStatusDD);
+		sel.selectByIndex(1);
+		Thread.sleep(2000);
 
 	}
 
 	@Given("I click on the Job Category dropdown menu")
-	public void i_click_on_the_Job_Category_dropdown_menu() {
-
-	}
-
-	@Given("I click Craft Workers")
-	public void i_click_Craft_Workers() {
+	public void i_click_on_the_Job_Category_dropdown_menu() throws InterruptedException {
+		Select sel = new Select(donaldJTrumpJob.jobCatDD);
+		sel.selectByIndex(1);
+		Thread.sleep(2000);
 
 	}
 
