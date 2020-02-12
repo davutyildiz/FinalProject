@@ -2,7 +2,6 @@ package com.hrms.steps;
 
 import com.hrms.utils.CommonMethods;
 
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 
 public class EmployeeBackgroundSteps extends CommonMethods {

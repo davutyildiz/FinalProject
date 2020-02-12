@@ -34,6 +34,7 @@ public class PageInitializeAll extends BaseClass {
 
 	protected static DonaldJTrumpJobPageElements donaldJTrumpJob;
 	protected static AddEmployeePageElements addEmployee;
+	
 
 	protected static void initializeAll() {
 		login = new LoginPageElements();
@@ -52,6 +53,7 @@ public class PageInitializeAll extends BaseClass {
 		person = new PersonalDetailsPageElements();
 		dependent = new DependentPageElements();
 		addEmployee = new AddEmployeePageElements();
+	
 
 	}
 }
