@@ -16,3 +16,6 @@ Feature: Personal Details
       | DLNumber | LEDate     | SSN    | OtherId | SIN        | NickName    | MilitaryService | Nationality | DofB       | Gender | MaritalStatus |
       |  1234567 | 2019-05-13 | 098765 |   23987 | 1209873645 | Black Mamba | none            | Mexican     | 1980-05-13 | Male   | Married       |
     Then I click on Save button
+    And I click to be abel to add attachment from PC
+    And I choose file from my PC
+    And I click to save attached file from my PC
