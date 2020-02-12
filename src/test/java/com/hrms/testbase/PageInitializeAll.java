@@ -29,23 +29,15 @@ public class PageInitializeAll extends BaseClass {
 	protected static DonaldJTrumpJobPageElements donaldJTrumpJob;
 	protected static ContactDetailsPageElements contactDetails;
 	protected static AddEmployeePageElements addEmployee;
-<<<<<<< HEAD
-
-	
 	protected static TaxExemptionsPageElements taxExemptions;
 
-=======
->>>>>>> 906e399aa7b18c72d4cc2162cf5449b8f2c06982
 	protected static void initializeAll() {
 		login = new LoginPageElements();
 		dash = new DashboardPageElement();
 		employeeList = new EmployeeListPageElements();
 		trumpElementInTable = new TrumpElementInTable();
 		leave = new LeaveListPageElements();
-<<<<<<< HEAD
-		taxExemptions= new TaxExemptionsPageElements();
-=======
->>>>>>> 906e399aa7b18c72d4cc2162cf5449b8f2c06982
+		taxExemptions = new TaxExemptionsPageElements();
 		salary = new SalaryPage();
 		donaldJTrumpJob = new DonaldJTrumpJobPageElements();
 		empEContact = new EmergencyContactsPageElements();
