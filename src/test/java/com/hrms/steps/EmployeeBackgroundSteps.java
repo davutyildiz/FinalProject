@@ -2,6 +2,7 @@ package com.hrms.steps;
 
 import com.hrms.utils.CommonMethods;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 
 public class EmployeeBackgroundSteps extends CommonMethods {
@@ -11,7 +12,6 @@ public class EmployeeBackgroundSteps extends CommonMethods {
 		sendText(login.username, "Admin");
 		sendText(login.password, "Syntax@123");
 	}
-
 	@Given("I click on login button")
 	public void i_click_on_login_button() throws InterruptedException {
 		click(login.loginBtn);
@@ -29,9 +29,7 @@ public class EmployeeBackgroundSteps extends CommonMethods {
 		Thread.sleep(1000);
 		sendText(employeeList.empId, ID);
 		click(employeeList.searchBtn);
-
-		Thread.sleep(3000);
-
+		Thread.sleep(1000);
 		click(employeeList.tableCell);
 		Thread.sleep(1000);
 	}
