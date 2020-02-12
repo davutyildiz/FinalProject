@@ -3,6 +3,8 @@ package com.hrms.steps;
 import java.util.List;
 import java.util.Map;
 
+import org.openqa.selenium.WebElement;
+
 import com.hrms.utils.CommonMethods;
 
 import cucumber.api.java.en.And;
@@ -37,10 +39,11 @@ public void i_enter_employee_details(DataTable dataTables) {
 		 		sendText(addEmployee.SIN, variable.get("SIN"));
 		 		sendText(addEmployee.NickName, variable.get("NickName"));
 		 		sendText(addEmployee.MilitaryService, variable.get("MilitaryService"));
-		 		sendText(addEmployee.Nationality, variable.get("Nationality"));
+		 		
+		 		selectDropddownValue(addEmployee.Nationality, variable.get("Nationality"));
 		 		sendText(addEmployee.DofB, variable.get("DofB"));
-		 		clickRadio(addEmployee.Genders,variable.get("Male"));
-		 		sendText(addEmployee.MaritalStatus, variable.get("MaritalStatus"));	
+		 		clickRadio(addEmployee.Genders,variable.get("Genders"));
+		 		selectDropddownValue(addEmployee.MaritalStatus, variable.get("MaritalStatus"));	
 	 }
 }
 
@@ -50,6 +53,31 @@ public void i_click_on_Save_button() throws InterruptedException {
 	Thread.sleep(30000);
     click(addEmployee.saveButton);
 }
+
+@Then("I click to be abel to add attachment from PC")
+public void i_click_to_be_abel_to_add_attachment_from_PC() throws InterruptedException {
+	Thread.sleep(30000);
+
+	click(addEmployee.editToAddAttachment);
+}
+
+@Then("I choose file from my PC")
+public void i_choose_file_from_my_PC() throws InterruptedException {
+	Thread.sleep(30000);
+
+	addEmployee.chooseFileFromComputer.sendKeys("/Users/selmatop/Documents/Book1.xlsx"); //this is where the file is.
+	
+}
+
+@Then("I click to save attached file from my PC")
+public void i_click_to_save_attached_file_from_my_PC() {
+  
+	click(addEmployee.saveAddedAttachment);
+}
+
+
+
+
 
 
 }
