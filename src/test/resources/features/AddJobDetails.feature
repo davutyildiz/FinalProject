@@ -18,10 +18,10 @@ Feature: Add Job Details
     And I click on the Job Category dropdown menu
     And I click on the Calendar button
     And I pick the date "February, 1"
-    And I click Start date calendar
-    And I click End date calendar
-    And I pick the date "February,31"
-    And I click on the Choose button and download a file
+    And I click on the SubUnit and select by index
+    And I click on start date calendar
+    And I click on end date calendar
+    And I click on location and select by index
     Then I click  Save botton
 
   @Andrei

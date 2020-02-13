@@ -6,16 +6,14 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 public class TestRunner_AddJobDetails {
-	
+
 	@RunWith(Cucumber.class)
-	@CucumberOptions(
-			features="src/test/resources/features"
-			,glue="com/hrms/steps"
-			,dryRun=false
-			,plugin= {"pretty"}
-			,monochrome=true
-			,tags= {"@Andrei"}
-			)
+	@CucumberOptions(features = "src/test/resources/features"
+	, glue = "com/hrms/steps"
+	,dryRun = false, 
+	plugin = {"pretty" }
+	,monochrome = true
+	,tags = { "@Andrei" })
 
 	public class TestRunner {
 	}
