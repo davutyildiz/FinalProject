@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.hrms.testbase.BaseClass;
 import com.hrms.utils.CommonMethods;
 
-public class DependentPageElements extends CommonMethods{
+public class DependentPageElements{
 	
 	@FindBy(linkText = "Dependents")
 	public WebElement DependentsLink;
@@ -20,6 +20,15 @@ public class DependentPageElements extends CommonMethods{
 	
 	@FindBy(id = "dependent_relationshipType")
 	public WebElement dependent_relationshipType;
+	
+	@FindBy(id = "dependent_dateOfBirth")
+	public WebElement dependent_dateOfBirth;
+	
+	@FindBy(id = "btnSaveDependent")
+	public WebElement btnSaveDependent;
+	
+	@FindBy(id = "dependent_relationship")
+	public WebElement dependent_relationship;
 	
 	
 	public DependentPageElements() {

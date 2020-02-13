@@ -25,6 +25,8 @@ import com.hrms.testbase.PageInitializeAll;
 //command+o--> for mac to see all methods within the class
 //ctrl+o--> for windows
 public class CommonMethods extends PageInitializeAll {
+	
+
 
 	/**
 	 * This method will accept the alert
@@ -40,7 +42,6 @@ public class CommonMethods extends PageInitializeAll {
 			System.out.println("Alert is not present");
 		}
 	}
-
 	/**
 	 * This methods will dismiss the alert
 	 * 

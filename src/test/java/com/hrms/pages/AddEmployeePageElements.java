@@ -1,5 +1,7 @@
 package com.hrms.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -7,13 +9,13 @@ import org.openqa.selenium.support.PageFactory;
 import com.hrms.testbase.BaseClass;
 
 public class AddEmployeePageElements {
-	@FindBy(id = "firstName")
+	@FindBy(id = "personal_txtEmpFirstName")
 	public WebElement firstName;
 
-	@FindBy(id = "middleName")
+	@FindBy(id = "personal_txtEmpMiddleName")
 	public WebElement middleName;
 	
-	@FindBy(id = "lastName")
+	@FindBy(id = "personal_txtEmpLastName")
 	public WebElement lastName;
 	
 	@FindBy(id = "chkLogin")
@@ -53,30 +55,41 @@ public class AddEmployeePageElements {
 	public WebElement  SIN;
 
 	@FindBy(id= "personal_txtEmpNickName")
-	public WebElement NickName ;
+	public WebElement NickName;
 	
 	@FindBy(id= "personal_txtMilitarySer")
 	public WebElement  MilitaryService;
 	
 	@FindBy(id= "personal_cmbNation")
-	public WebElement Nationality ;
+	public WebElement Nationality;
 	
 	@FindBy(id= "personal_DOB")
-	public WebElement DofB  ;
+	public WebElement DofB;
 	
-	@FindBy(id= "personal_optGender_2")
-	public WebElement Gender  ;
+	@FindBy(name= "personal[optGender]")
+	public List<WebElement> Genders;
 	
 	@FindBy(id= "personal_cmbMarital")
-	public WebElement MaritalStatus  ;
+	public WebElement MaritalStatus;
 	
 	@FindBy(id= "btnSave")
-	public WebElement saveButton ;
+	public WebElement saveButton;
 	
+
 	@FindBy(id= "btnSave")
-	public WebElement editButton ;
+	public WebElement editButton;
 	
+	// to add attachment 
 	
+	@FindBy(id= "btnAddAttachment")
+	public WebElement editToAddAttachment;
+	
+	@FindBy(id= "ufile")
+	public WebElement chooseFileFromComputer;
+	
+	@FindBy(id= "btnSaveAttachment")
+	public WebElement saveAddedAttachment;
+
 	public AddEmployeePageElements() {
 		PageFactory.initElements(BaseClass.driver, this);
 	}

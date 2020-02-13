@@ -10,7 +10,6 @@ import com.hrms.utils.ConfigsReader;
 import com.hrms.utils.Constants;
 
 public class BaseClass {
-
 	public static WebDriver driver;
 	public static void setUp() {
 		String extension = "";

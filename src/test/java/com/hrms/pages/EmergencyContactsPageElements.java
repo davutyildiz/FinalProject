@@ -37,7 +37,12 @@ public class EmergencyContactsPageElements {
 	@FindBy(id = "btnAddAttachment")
 	public WebElement AddAttachmentBtn;
 	
-		
+	@FindBy(id="ufile")	
+	public WebElement UploadFile;
+	
+	@FindBy(id="btnSaveAttachment")	
+	public WebElement UploadFileSave;
+	
 	public EmergencyContactsPageElements() {
 		PageFactory.initElements(BaseClass.driver, this);
 	}
