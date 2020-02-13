@@ -11,7 +11,11 @@ import cucumber.api.junit.Cucumber;
 ,dryRun = false, 
 plugin = {"pretty" }
 ,monochrome = true
-,tags = { "@Andrei" })
+,tags = { "@Andrei" 
+, "html:target/html/cucumber-default-report"
+, "json:target/cucumber.json"
+, "rerun:target/failed.txt"}
+)
 
 public class TestRunner_AddJobDetails {
 

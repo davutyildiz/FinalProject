@@ -1,6 +1,5 @@
 package com.hrms.steps;
 
-import org.apache.commons.math3.analysis.function.Constant;
 import org.openqa.selenium.support.ui.Select;
 
 import com.hrms.utils.CommonMethods;
@@ -14,14 +13,14 @@ public class AddJobsDetailsSteps extends CommonMethods {
 	public void i_Find_Don_Tr_and_I_click_on_the_first_name_of_employee() throws InterruptedException {
 
 		click(trumpElementInTable.trump);
-		Thread.sleep(2000);
+
 	}
 
 	@Given("I click on the Job button on the left")
 	public void i_click_on_the_Job_button_on_the_left() throws InterruptedException {
-		Thread.sleep(2000);
-		click(person.jobBtn);
-
+		Thread.sleep(5000);
+		jsClick(person.jobBtn);
+		Thread.sleep(3000);
 	}
 
 	@Given("I click on Edit button on the bottom")
@@ -71,25 +70,27 @@ public class AddJobsDetailsSteps extends CommonMethods {
 	}
 
 	@Given("I pick the date {string}")
-	public void i_pick_the_date(String string) {
+	public void i_pick_the_date(String string) throws InterruptedException {
 
 		click(donaldJTrumpJob.twoEleven2020);
+		Thread.sleep(3000);
 	}
 
 	@Given("I click on the SubUnit and select by index")
 	public void i_click_on_the_SubUnit_and_select_by_index() throws InterruptedException {
-		// click(donaldJTrumpJob.subUnitDD);
-		// Select sel = new Select(donaldJTrumpJob.subUnitDD);
-		// sel.selectByIndex(0);
-		// Thread.sleep(1000);
+		jsClick(donaldJTrumpJob.subUnitDD);
+		Select sel = new Select(donaldJTrumpJob.subUnitDD);
+		sel.selectByIndex(0);
+		Thread.sleep(1000);
 	}
 
 	@Given("I click on location and select by index")
 	public void i_click_on_location_and_select_by_index() throws InterruptedException {
-		// click(donaldJTrumpJob.locationDD);
-		// Select sel = new Select(donaldJTrumpJob.locationDD);
-		// sel.selectByIndex(0);
-		// Thread.sleep(1000);
+
+		jsClick(donaldJTrumpJob.locationDD);
+		Select sel = new Select(donaldJTrumpJob.locationDD);
+		sel.selectByIndex(0);
+		Thread.sleep(1000);
 	}
 
 	@Given("I click on start date calendar")
@@ -133,10 +134,11 @@ public class AddJobsDetailsSteps extends CommonMethods {
 
 	}
 
+//////////////////////////////////////////////next feature
 	@Given("I click on the second Choose button and download a file")
 	public void i_click_on_the_second_Choose_button_and_download_a_file() throws InterruptedException {
 		Thread.sleep(2000);
-		donaldJTrumpJob.secondChooseBtn.sendKeys(Constants.UPLOAD_FILES_PATH+"testpix.png");
+		donaldJTrumpJob.secondChooseBtn.sendKeys(Constants.UPLOAD_FILES_PATH + "testpix.png");
 		Thread.sleep(2000);
 	}
 
