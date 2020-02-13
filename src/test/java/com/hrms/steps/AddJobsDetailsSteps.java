@@ -1,9 +1,10 @@
 package com.hrms.steps;
 
-import org.openqa.selenium.By;
+import org.apache.commons.math3.analysis.function.Constant;
 import org.openqa.selenium.support.ui.Select;
 
 import com.hrms.utils.CommonMethods;
+import com.hrms.utils.Constants;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -136,7 +137,7 @@ public class AddJobsDetailsSteps extends CommonMethods {
 	@Given("I click on the second Choose button and download a file")
 	public void i_click_on_the_second_Choose_button_and_download_a_file() throws InterruptedException {
 		Thread.sleep(2000);
-		donaldJTrumpJob.secondChooseBtn.sendKeys("‪C:\\Users\\andre\\Downloads\\TestNG Class 1_Notes");
+		donaldJTrumpJob.secondChooseBtn.sendKeys(Constants.UPLOAD_FILES_PATH+"testpix.png");
 		Thread.sleep(2000);
 	}
 
