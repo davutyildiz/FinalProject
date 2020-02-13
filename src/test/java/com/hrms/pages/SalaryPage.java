@@ -15,7 +15,7 @@ public class SalaryPage{
 	@FindBy(id="addSalary")
 	public WebElement addsalarybtn;
 	
-	@FindBy(linkText="linkText=Salary")
+	@FindBy(linkText="Salary")
 	public WebElement salarylink;
 	
 	@FindBy(xpath="//a[contains(text(),'Donld J')]")
@@ -30,7 +30,7 @@ public class SalaryPage{
 	@FindBy(id="salary_payperiod_code")
 	public WebElement selectsalaryperiod;
 	
-	@FindBy(id="salary_currency_id")
+	@FindBy(xpath="//select[@name='salary[currency_id]']")
 	public WebElement selectcurrency;
 	
 	@FindBy(id="salary_basic_salary")
@@ -48,7 +48,7 @@ public class SalaryPage{
 	 @FindBy(id="directdeposit_account_type")
 	 public WebElement selectaccounttype;
 	 
-	 @FindBy(id="directdeposit_routing_num")
+	 @FindBy(xpath="//input[@id='directdeposit_routing_num']")
 	 public WebElement routingnumber;
 	 
 	 @FindBy(id="directdeposit_amount")
@@ -69,14 +69,44 @@ public class SalaryPage{
 	 @FindBy(id="btnSaveAttachment")
 	 public WebElement attachmentuploadbtn;
 	 
+	 @FindBy(xpath="//*[contains(text(),'Successfully Saved')]")
+	 public WebElement savedmsg;
 	 
+	 //addin attachment
 	 
+	 @FindBy(id="btnAddAttachment")
+		public WebElement addattachbtn;
+	 
+	 @FindBy(id="ufile")
+	 public WebElement chosefilebtn;
+	 
+	 @FindBy(id="btnSaveAttachment")
+	 public WebElement fileuploadbtn;
+	 
+	 @FindBy(xpath="//a[@class='fileLink tiptip']")
+	 public WebElement validmsg;
+	 
+	 @FindBy(id="txtAttDesc")
+	 public WebElement addfilecomment;
+	 
+	 @FindBy(xpath="//*[@id=\"tblAttachments\"]/tbody/tr/td[1]") // or *[@id="tblAttachments"]/tbody/tr/td[1]/input
+	 public WebElement checkboxinsearch;
+	
+	 @FindBy(xpath="//*[@id=\"tblAttachments\"]/tbody/tr/td[2]")
+	 public WebElement attachedfilethere;
+	//*[@id="tblAttachments"]/tbody/tr/td[2]/a
 	 
 	
+	@FindBy(id="btnDeleteAttachment")
+	public WebElement attachdeletebtn;
 	
+	@FindBy(xpath="//*[contains(text(),'Successfully Deleted')]")
+	public WebElement msgdeleted;
 	
+	//*[@id="attachmentList"]/div[2]/div/text()
+	//*[@id="attachmentList"]/div[2]/div/text()
 	
-	
+
 	public SalaryPage() {
 		PageFactory.initElements(BaseClass.driver, this);
 	}

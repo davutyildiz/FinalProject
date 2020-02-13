@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 		,dryRun=false
 		,plugin= {"pretty"}
 		,monochrome=true
-		,tags= {"@smoke"}
+		,tags= {"@salim"}
 		)
 
 
