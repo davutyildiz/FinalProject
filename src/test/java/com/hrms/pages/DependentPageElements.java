@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.hrms.testbase.BaseClass;
 import com.hrms.utils.CommonMethods;
 
-public class DependentPageElements extends CommonMethods{
+public class DependentPageElements{
 	
 	@FindBy(linkText = "Dependents")
 	public WebElement DependentsLink;
