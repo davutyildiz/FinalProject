@@ -30,7 +30,7 @@ public class PageInitializeAll extends BaseClass {
 	protected static ContactDetailsPageElements contactDetails;
 	protected static AddEmployeePageElements addEmployee;
 
-	//protected static TaxExemptionsPageElements taxExemptions;
+	protected static TaxExemptionsPageElements taxExemptions;
 
 	protected static void initializeAll() {
 		login = new LoginPageElements();
@@ -38,7 +38,7 @@ public class PageInitializeAll extends BaseClass {
 		employeeList = new EmployeeListPageElements();
 		trumpElementInTable = new TrumpElementInTable();
 		leave = new LeaveListPageElements();
-		//taxExemptions = new TaxExemptionsPageElements();
+		taxExemptions = new TaxExemptionsPageElements();
 		salary = new SalaryPage();
 		donaldJTrumpJob = new DonaldJTrumpJobPageElements();
 		empEContact = new EmergencyContactsPageElements();
