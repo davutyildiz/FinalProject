@@ -9,6 +9,11 @@ import com.hrms.utils.CommonMethods;
 
 public class PersonalDetailsPageElements extends CommonMethods {
 
+	
+	
+	//1. Try a different method to get the button!!!Or two
+	
+	//2. Try to get a button close to this button.
 	@FindBy(linkText = "Job")
 	public WebElement jobBtn;
 
