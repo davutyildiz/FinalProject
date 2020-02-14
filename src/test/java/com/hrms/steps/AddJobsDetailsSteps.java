@@ -16,11 +16,10 @@ public class AddJobsDetailsSteps extends CommonMethods {
 
 	}
 
-	
-	//This is where problem happens 1/10
+	// This is where problem happens 1/10
 	@Given("I click on the Job button on the left")
 	public void i_click_on_the_Job_button_on_the_left() throws InterruptedException {
-		//try waiting more 10s, or even 15s
+		// try waiting more 10s, or even 15s
 		Thread.sleep(5000);
 		jsClick(person.jobBtn);
 		Thread.sleep(3000);
@@ -58,8 +57,9 @@ public class AddJobsDetailsSteps extends CommonMethods {
 
 	}
 
-	//to test whether the below steps are working, try changing one of the details and check if on the first test that faild to click 
-	//the job button, does it save that change??
+	// to test whether the below steps are working, try changing one of the details
+	// and check if on the first test that faild to click
+	// the job button, does it save that change??
 	@Given("I click on the Job Category dropdown menu")
 	public void i_click_on_the_Job_Category_dropdown_menu() throws InterruptedException {
 		Select sel = new Select(donaldJTrumpJob.jobCatDD);
@@ -120,7 +120,7 @@ public class AddJobsDetailsSteps extends CommonMethods {
 	@Given("I click on the Choose button and download a file")
 	public void i_click_on_the_Choose_button_and_download_a_file() throws InterruptedException {
 		Thread.sleep(2000);
-		donaldJTrumpJob.cntrDetailsChooseFile.sendKeys("C:\\Users\\andre\\Documents\\TestingPractice");
+		donaldJTrumpJob.cntrDetailsChooseFile.sendKeys(Constants.UPLOAD_FILES_PATH + "CucumberClass1_Notes");
 		Thread.sleep(2000);
 	}
 
