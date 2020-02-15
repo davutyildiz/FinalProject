@@ -10,7 +10,7 @@ public class EmployeeBackgroundSteps extends CommonMethods {
 	@Given("I enter valid username and valid password")
 	public void i_enter_valid_usename_and_valid_password() {
 		sendText(login.username, "Admin");
-		sendText(login.password, "Syntax@123");
+		sendText(login.password, "Hum@nhrm123");
 	}
 	@Given("I click on login button")
 	public void i_click_on_login_button() throws InterruptedException {
