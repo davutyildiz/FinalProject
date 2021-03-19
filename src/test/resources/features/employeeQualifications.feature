@@ -7,7 +7,7 @@ Feature: Employee Qualifications
 Given I enter valid username and valid password
 And I click on login button
 And I go to employee list
-And I find and click the employee using ID "9099"
+And I find and click the employee using ID "00001"
 
   @smoke
   Scenario: Add Work Experience
@@ -16,9 +16,9 @@ And I find and click the employee using ID "9099"
     And I enter Work details
     Then I click on save button work Experience
     
-    When I click on Add education
-    And I enter education details
-    Then I click save button Education
+    #When I click on Add education
+    #And I enter education details
+    #Then I click save button Education
     
     
  

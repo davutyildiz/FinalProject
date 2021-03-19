@@ -1,6 +1,7 @@
 package com.hrms.utils;
 
 public class Constants {
+
 	
 	public static final String UPLOAD_FILES_PATH= System.getProperty("user.dir")
 			+ "/src/test/resources/documentsources/";

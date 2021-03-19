@@ -10,7 +10,7 @@ import com.hrms.testbase.BaseClass;
 
 public class EmpQualificationPageElements {
 
-	@FindBy(xpath = "//*[@id='sidenav']/li[9]")
+	@FindBy(xpath = "//*[@id=\"sidenav\"]/li[10]/a")
 	public WebElement Qualifications;
 	// WorkExperience
 	@FindBy(id = "addWorkExperience")
@@ -40,36 +40,36 @@ public class EmpQualificationPageElements {
 	@FindBy(id="btnWorkExpSave")
 	public WebElement saveWorkExp;
 	// Education
-	@FindBy(id = "addEducation")
-	public WebElement Eduacation;
-	@FindBy(id="education_code")
-	public WebElement EduCode;
-	@FindBy(id = "education_institute")
-	public WebElement EduInstitute;
-	@FindBy(id = "education_major")
-	public WebElement EduMajor;
-	@FindBy(id = "education_year")
-	public WebElement EduYear;
-	@FindBy(id = "education_gpa")
-	public WebElement EduGpa;
-	@FindBy(id = "education_start_date")
-	public WebElement EduStartdate;
-	@FindBy(xpath="//select[@class='ui-datepicker-month']")
-	public WebElement EduStartMonth;
-	@FindBy(xpath="//select[@class='ui-datepicker-year']")
-	public WebElement EduStartYear;
-	@FindBy(xpath="//table[@class='ui-datepicker-calendar']/tbody/tr/td")
-	public List<WebElement> EduStartDay;
-	@FindBy(id = "education_end_date")
-	public WebElement EduEnddate;
-	@FindBy(xpath="//select[@class='ui-datepicker-month']")
-	public WebElement EduEndMonth;
-	@FindBy(xpath="//select[@class='ui-datepicker-year']")
-	public WebElement EduEndtYear;
-	@FindBy(xpath="//table[@class='ui-datepicker-calendar']/tbody/tr/td")
-	public List<WebElement> EduEndDay;
-	@FindBy(id="btnEducationSave")
-	public WebElement EduSave;
+//	@FindBy(id = "addEducation")
+//	public WebElement Eduacation;
+//	@FindBy(id="education_code")
+//	public WebElement EduCode;
+//	@FindBy(id = "education_institute")
+//	public WebElement EduInstitute;
+//	@FindBy(id = "education_major")
+//	public WebElement EduMajor;
+//	@FindBy(id = "education_year")
+//	public WebElement EduYear;
+//	@FindBy(id = "education_gpa")
+//	public WebElement EduGpa;
+//	@FindBy(id = "education_start_date")
+//	public WebElement EduStartdate;
+//	@FindBy(xpath="//select[@class='ui-datepicker-month']")
+//	public WebElement EduStartMonth;
+//	@FindBy(xpath="//select[@class='ui-datepicker-year']")
+//	public WebElement EduStartYear;
+//	@FindBy(xpath="//table[@class='ui-datepicker-calendar']/tbody/tr/td")
+//	public List<WebElement> EduStartDay;
+//	@FindBy(id = "education_end_date")
+//	public WebElement EduEnddate;
+//	@FindBy(xpath="//select[@class='ui-datepicker-month']")
+//	public WebElement EduEndMonth;
+//	@FindBy(xpath="//select[@class='ui-datepicker-year']")
+//	public WebElement EduEndtYear;
+//	@FindBy(xpath="//table[@class='ui-datepicker-calendar']/tbody/tr/td")
+//	public List<WebElement> EduEndDay;
+//	@FindBy(id="btnEducationSave")
+//	public WebElement EduSave;
 	// Skill
 	@FindBy(id = "addSkill")
 	public WebElement Skill;

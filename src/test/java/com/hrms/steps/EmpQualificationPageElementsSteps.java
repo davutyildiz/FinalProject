@@ -67,72 +67,72 @@ public class EmpQualificationPageElementsSteps extends CommonMethods {
 		click(empQualification.saveWorkExp);
 	}
 	// education
-	@When("I click on Add education")
-	public void i_click_on_Add_education() {
-		click(empQualification.Eduacation);
-	}
-	@When("I enter education details")
-	public void i_enter_education_details() throws InterruptedException {
-	   Select selectEduCode=new Select(empQualification.EduCode);
-	   selectEduCode.selectByValue("6");
-	   Thread.sleep(1000);
-	   sendText(empQualification.EduInstitute,"Princton University");
-	   Thread.sleep(1000);
-	   sendText(empQualification.EduMajor,"Computer Science");
-	   Thread.sleep(1000);
-	   sendText(empQualification.EduYear,"2000");
-	   Thread.sleep(1000);
-	   sendText(empQualification.EduGpa,"3.90");
-	   Thread.sleep(1000);
-	   click(empQualification.EduStartdate);
-	   Thread.sleep(1000);
-	   Select selectEduStartMonth=new Select(empQualification.EduStartMonth);
-	   selectEduStartMonth.selectByValue("9");
-	   Thread.sleep(1000);
-	   Select selectEduStartYear=new Select(empQualification.EduStartYear);
-	   selectEduStartYear.selectByValue("1996");
-	   Thread.sleep(1000);
-	   List<WebElement>selectEduStartDay=empQualification.EduStartDay;
-	   for (WebElement fromCell :selectEduStartDay ) {
-			String fromDay = fromCell.getText();
-			if (fromDay.equals("21")) {
-				fromCell.click();
-				break;
-			}
-		}
-	   Thread.sleep(1000);
-	   click(empQualification.EduEnddate);
-	   Select selectEduEndtMonth=new Select(empQualification.EduEndMonth);
-	   selectEduStartMonth.selectByValue("8");
-	   Thread.sleep(1000);
-	   Select selectEduEndYear=new Select(empQualification.EduEndtYear);
-	   selectEduStartYear.selectByValue("2000");
-	   Thread.sleep(1000);
-	   List<WebElement>selectEduEndDay=empQualification.EduEndDay;
-	   for (WebElement fromCell :selectEduEndDay ) {
-			String fromDay = fromCell.getText();
-			if (fromDay.equals("15")) {
-				fromCell.click();
-				break;
-			}
-		}
-	   Thread.sleep(1000);
-	}
-	@Then("I click save button Education")
-	public void i_click_save_button_Education() throws InterruptedException {
-		click(empQualification.EduSave);
-		   Thread.sleep(1000);
-	}
+//	@When("I click on Add education")
+//	public void i_click_on_Add_education() {
+//		click(empQualification.Eduacation);
+//	}
+//	@When("I enter education details")
+//	public void i_enter_education_details() throws InterruptedException {
+//	   Select selectEduCode=new Select(empQualification.EduCode);
+//	   selectEduCode.selectByValue("6");
+//	   Thread.sleep(1000);
+//	   sendText(empQualification.EduInstitute,"Princton University");
+//	   Thread.sleep(1000);
+//	   sendText(empQualification.EduMajor,"Computer Science");
+//	   Thread.sleep(1000);
+//	   sendText(empQualification.EduYear,"2000");
+//	   Thread.sleep(1000);
+//	   sendText(empQualification.EduGpa,"3.90");
+//	   Thread.sleep(1000);
+//	   click(empQualification.EduStartdate);
+//	   Thread.sleep(1000);
+//	   Select selectEduStartMonth=new Select(empQualification.EduStartMonth);
+//	   selectEduStartMonth.selectByValue("9");
+//	   Thread.sleep(1000);
+//	   Select selectEduStartYear=new Select(empQualification.EduStartYear);
+//	   selectEduStartYear.selectByValue("1996");
+//	   Thread.sleep(1000);
+//	   List<WebElement>selectEduStartDay=empQualification.EduStartDay;
+//	   for (WebElement fromCell :selectEduStartDay ) {
+//			String fromDay = fromCell.getText();
+//			if (fromDay.equals("21")) {
+//				fromCell.click();
+//				break;
+//			}
+//		}
+//	   Thread.sleep(1000);
+//	   click(empQualification.EduEnddate);
+//	   Select selectEduEndtMonth=new Select(empQualification.EduEndMonth);
+//	   selectEduStartMonth.selectByValue("8");
+//	   Thread.sleep(1000);
+//	   Select selectEduEndYear=new Select(empQualification.EduEndtYear);
+//	   selectEduStartYear.selectByValue("2000");
+//	   Thread.sleep(1000);
+//	   List<WebElement>selectEduEndDay=empQualification.EduEndDay;
+//	   for (WebElement fromCell :selectEduEndDay ) {
+//			String fromDay = fromCell.getText();
+//			if (fromDay.equals("15")) {
+//				fromCell.click();
+//				break;
+//			}
+//		}
+//	   Thread.sleep(1000);
+//	}
+//	@Then("I click save button Education")
+//	public void i_click_save_button_Education() throws InterruptedException {
+//		click(empQualification.EduSave);
+//		   Thread.sleep(1000);
+//	}
 	// Skill 
 	@When("I click on Add skill")
 	public void i_click_on_Add_skill() throws InterruptedException {
 	click(empQualification.Skill);
-	 Thread.sleep(1000);
+	 Thread.sleep(2000);
 	}
 	@When("I enter skill details")
 	public void i_enter_skill_details() throws InterruptedException {
 	Select selectSkill=new Select(empQualification.SkillCode);
-	selectSkill.selectByValue("1");
+	selectSkill.selectByValue("393");
 	 Thread.sleep(1000);
 	sendText(empQualification.SkillExpYear,"10");
 	sendText(empQualification.SkillComment,"Qualify");
@@ -151,7 +151,7 @@ public class EmpQualificationPageElementsSteps extends CommonMethods {
 	@When("I enter language details")
 	public void i_enter_language_details() throws InterruptedException {
 	   Select LangCode=new Select(empQualification.LanguageCode);
-	   LangCode.selectByValue("3");
+	   LangCode.selectByValue("429");
 	   Thread.sleep(1000);
 	   Select LangFluency=new Select(empQualification.LanguageFluency);
 	   LangFluency.selectByValue("3");
@@ -175,7 +175,7 @@ public class EmpQualificationPageElementsSteps extends CommonMethods {
 	@When("I enter license details")
 	public void i_enter_license_details() throws InterruptedException {
 	   Select LcnType=new Select(empQualification.LicenseType);
-	   LcnType.selectByValue("4");
+	   LcnType.selectByValue("230");
 	   Thread.sleep(1000);
 	   sendText(empQualification.LicenseNo,"Y342512345");
 	   click(empQualification.LicenseIssuedDate);
@@ -215,7 +215,7 @@ public class EmpQualificationPageElementsSteps extends CommonMethods {
 		}
 	   Thread.sleep(1000);
 	   
-	   
+	 
 	}
 
 	@Then("I click save button license")
@@ -238,6 +238,7 @@ public class EmpQualificationPageElementsSteps extends CommonMethods {
 	   sendText(empQualification.CommentAttachement,"Handsome Gruuuuuu");
 	}
 
+	
 	@Then("I click save button Attachements")
 	public void i_click_save_button_Attachements() throws InterruptedException {
 	   click(empQualification.AttachementUpload);

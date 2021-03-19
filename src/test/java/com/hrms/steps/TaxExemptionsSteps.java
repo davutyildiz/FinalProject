@@ -3,10 +3,12 @@ package com.hrms.steps;
 import org.openqa.selenium.support.ui.Select;
 
 import com.hrms.utils.CommonMethods;
+import com.hrms.utils.Constants;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+
 
 public class TaxExemptionsSteps extends CommonMethods {
 	
@@ -94,7 +96,7 @@ public class TaxExemptionsSteps extends CommonMethods {
 
 	@Then("I choose file from comtputer for employee tax exemption")
 	public void i_choose_file_from_comtputer_for_employee_tax_exemption() throws InterruptedException {
-		taxExemptions.empTaxExemptionsChooseAttachment.sendKeys("/Users/user/Documents/hello.xlsx");
+		taxExemptions.empTaxExemptionsChooseAttachment.sendKeys(Constants.UPLOAD_FILES_PATH+"Book11.xlsx");
 		Thread.sleep(3000);
 
 	}
