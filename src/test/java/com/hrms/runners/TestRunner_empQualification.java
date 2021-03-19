@@ -9,7 +9,10 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features = "src/test/resources/features"
 		, glue = "com/hrms/steps"
 		, dryRun = false
-		, plugin = {"pretty" }
+		, plugin = {"pretty"
+				, "html:target/html/cucumber-default-report"
+				, "json:target/cucumber.json"
+				, "rerun:target/failed.txt"}
 		, monochrome = true
 		, tags = { "@empQual" })
 
