@@ -15,7 +15,7 @@ import cucumber.api.junit.Cucumber;
 		, "json:target/cucumber.json"
 		, "rerun:target/failed.txt"}
 , monochrome = true
-, tags = { "@Smoke" })
+, tags = { "@Job" })
 
 public class Runner {
 

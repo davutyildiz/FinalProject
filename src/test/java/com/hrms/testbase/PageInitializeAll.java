@@ -1,6 +1,7 @@
 package com.hrms.testbase;
 
 import com.hrms.pages.AddEmployeePageElements;
+import com.hrms.pages.AddJobDetailssPageElements;
 import com.hrms.pages.ContactDetailsPageElements;
 import com.hrms.pages.DashboardPageElement;
 import com.hrms.pages.DependentPageElements;
@@ -31,6 +32,7 @@ public class PageInitializeAll extends BaseClass {
 	protected static AddEmployeePageElements addEmployee;
 
 	protected static TaxExemptionsPageElements taxExemptions;
+	protected static AddJobDetailssPageElements JobDetails;
 
 	protected static void initializeAll() {
 		login = new LoginPageElements();
@@ -47,6 +49,7 @@ public class PageInitializeAll extends BaseClass {
 		dependent = new DependentPageElements();
 		contactDetails = new ContactDetailsPageElements();
 		addEmployee = new AddEmployeePageElements();
+		JobDetails=new AddJobDetailssPageElements();
 	
 
 	}
