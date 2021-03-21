@@ -13,7 +13,7 @@ Feature: Add Job Detailss
     When I click on the Job Button on the Left
     And I click on Edit Button on the Bottom
     And I click on the Job Title Dropdown Menu
-    And I click on the Accountant
+   # And I click on the Accountant
     And I click on the Employment Status Dropdown Menu
     And I click on the Job Category Dropdown Menu
     And I click on the Calendar Button

@@ -5,7 +5,7 @@ import com.hrms.pages.AddJobDetailssPageElements;
 import com.hrms.pages.ContactDetailsPageElements;
 import com.hrms.pages.DashboardPageElement;
 import com.hrms.pages.DependentPageElements;
-import com.hrms.pages.DonaldJTrumpJobPageElements;
+
 import com.hrms.pages.EmergencyContactsPageElements;
 import com.hrms.pages.EmpQualificationPageElements;
 import com.hrms.pages.EmployeeListPageElements;
@@ -27,7 +27,7 @@ public class PageInitializeAll extends BaseClass {
 	protected static TrumpElementInTable trumpElementInTable;
 	protected static LeaveListPageElements leave;
 	protected static SalaryPage salary;
-	protected static DonaldJTrumpJobPageElements donaldJTrumpJob;
+
 	protected static ContactDetailsPageElements contactDetails;
 	protected static AddEmployeePageElements addEmployee;
 
@@ -42,7 +42,7 @@ public class PageInitializeAll extends BaseClass {
 		leave = new LeaveListPageElements();
 		taxExemptions = new TaxExemptionsPageElements();
 		salary = new SalaryPage();
-		donaldJTrumpJob = new DonaldJTrumpJobPageElements();
+		
 		empEContact = new EmergencyContactsPageElements();
 		empQualification = new EmpQualificationPageElements();
 		person = new PersonalDetailsPageElements();
