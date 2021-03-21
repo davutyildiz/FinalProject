@@ -87,6 +87,9 @@ public class AddEmployeePageElements {
 	@FindBy(id= "ufile")
 	public WebElement chooseFileFromComputer;
 	
+	@FindBy (id="txtAttDesc")
+	public WebElement Comment;
+	
 	@FindBy(id= "btnSaveAttachment")
 	public WebElement saveAddedAttachment;
 

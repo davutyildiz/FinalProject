@@ -6,6 +6,7 @@ import java.util.Map;
 import org.openqa.selenium.WebElement;
 
 import com.hrms.utils.CommonMethods;
+import com.hrms.utils.Constants;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
@@ -34,9 +35,9 @@ public void i_enter_employee_details(DataTable dataTables) {
 	 for(Map<String,String> variable:variables) {
 		 		sendText(addEmployee.DLNumber, variable.get("DLNumber"));
 		 		sendText(addEmployee.LEDate, variable.get("LEDate"));
-		 		sendText(addEmployee.SSN, variable.get("SSN"));
+		 		//sendText(addEmployee.SSN, variable.get("SSN"));
 		 		sendText(addEmployee.OtherId, variable.get("OtherId"));
-		 		sendText(addEmployee.SIN, variable.get("SIN"));
+		 		//sendText(addEmployee.SIN, variable.get("SIN"));
 		 		sendText(addEmployee.NickName, variable.get("NickName"));
 		 		sendText(addEmployee.MilitaryService, variable.get("MilitaryService"));
 		 		
@@ -65,8 +66,11 @@ public void i_click_to_be_abel_to_add_attachment_from_PC() throws InterruptedExc
 public void i_choose_file_from_my_PC() throws InterruptedException {
 	Thread.sleep(30000);
 
-	addEmployee.chooseFileFromComputer.sendKeys("/Users/selmatop/Documents/Book1.xlsx"); //this is where the file is.
+	//addEmployee.chooseFileFromComputer.sendKeys("/Users/selmatop/Documents/Book1.xlsx"); //this is where the file is.
 	
+	addEmployee.chooseFileFromComputer.sendKeys(Constants.UPLOAD_FILES_PATH+"Gru.jpg");
+	   Thread.sleep(1000); 
+	   sendText(addEmployee.Comment,"Handsome Gruuuuuu");
 }
 
 @Then("I click to save attached file from my PC")

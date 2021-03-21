@@ -49,7 +49,7 @@ public class ContactDetailsSteps extends CommonMethods {
 
 	@Then("I insert work mail")
 	public void i_insert_work_mail() {
-		sendText(contactDetails.conMail, "DonJT@usa.com");
+		sendText(contactDetails.conMail, "RodinStar@gmail.com");
 	}
 
 	@Then("I click on conDet_Save button")
