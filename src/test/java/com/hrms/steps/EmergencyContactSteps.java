@@ -2,6 +2,7 @@
 package com.hrms.steps;
 
 import com.hrms.utils.CommonMethods;
+import com.hrms.utils.Constants;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -55,8 +56,9 @@ public class EmergencyContactSteps extends CommonMethods {
 	
 	@Then("I click on upload file button")
 	public void i_click_on_upload_file_button() throws InterruptedException {
-		empEContact.UploadFile.sendKeys("/Users/user/Documents/hello.xlsx");
+		empEContact.UploadFile.sendKeys(Constants.UPLOAD_FILES_PATH+"Gru.jpg");
 		Thread.sleep(3000);
+		sendText(empEContact.CommentAttachement,"Handsome Gruuuuuu");
 	}
 	
 	@Then("I click on upload file to save")

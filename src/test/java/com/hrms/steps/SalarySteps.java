@@ -25,7 +25,7 @@ public class SalarySteps  extends CommonMethods{
 	@When("I filled up all boxes and click on bank details")
 	public void i_filled_up_all_boxes_and_click_on_bank_details(DataTable dataTable1) throws InterruptedException {
 	  Select paygrade=new Select(salary.paygradeselect);
-	  paygrade.selectByVisibleText("batuhan sutceker");
+	  paygrade.selectByValue("1");
 	   
 	  Select period=new Select(salary.selectsalaryperiod);
 	  period.selectByVisibleText("Monthly");

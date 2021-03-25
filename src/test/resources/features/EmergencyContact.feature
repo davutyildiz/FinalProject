@@ -5,10 +5,10 @@ Feature: Emergency Contact
     Given I enter valid username and valid password
     And I click on login button
     And I go to employee list
-    And I find and click the employee using ID "13171"
+    And I find and click the employee using ID "00001"
     And I click on emergency contact
 
-  @smoke19
+  @smoke
   Scenario Outline: Emergency Contact
     When I click on add contact to add contact information
     And I send "<Name>", "<Relationship>", "<Home Telephone>", "<Mobile>" and "<Work Telephone>"

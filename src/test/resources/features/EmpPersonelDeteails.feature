@@ -1,4 +1,4 @@
-@smoke123
+
 Feature: Personal Details
 
   Background: 
@@ -19,3 +19,9 @@ Feature: Personal Details
     And I click to be abel to add attachment from PC
     And I choose file from my PC
     And I click to save attached file from my PC
+
+    @111
+     Scenario: Uploding Employee Photograph
+     When I click on Image at the left
+     And I choose Employee Photograph
+     Then I click to Upload

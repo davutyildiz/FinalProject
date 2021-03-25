@@ -92,6 +92,19 @@ public class AddEmployeePageElements {
 	
 	@FindBy(id= "btnSaveAttachment")
 	public WebElement saveAddedAttachment;
+	
+	// for employee Photograph
+	
+	@FindBy(id= "empPic")
+	public WebElement EmpPhoto;
+	
+	@FindBy(id= "photofile")
+	public WebElement EmpPhotoFile;
+	
+	@FindBy(id= "btnSave")
+	public WebElement EmpPhotoSave;
+
+	
 
 	public AddEmployeePageElements() {
 		PageFactory.initElements(BaseClass.driver, this);

@@ -81,6 +81,25 @@ public void i_click_to_save_attached_file_from_my_PC() {
 
 
 
+@When("I click on Image at the left")
+public void i_click_on_Image_at_the_left() throws InterruptedException {
+   click(addEmployee.EmpPhoto);
+   Thread.sleep(4000);
+}
+
+@When("I choose Employee Photograph")
+public void i_choose_Employee_Photograph() throws InterruptedException {
+    jsClick(addEmployee.EmpPhotoFile);
+    Thread.sleep(4000); 
+    addEmployee.EmpPhotoFile.sendKeys(Constants.UPLOAD_FILES_PATH+"Gru.jpg");
+	   Thread.sleep(4000); 
+}
+
+@Then("I click to Upload")
+public void i_click_to_Upload() throws InterruptedException {
+   jsClick(addEmployee.EmpPhotoSave);
+   Thread.sleep(4000);
+}
 
 
 

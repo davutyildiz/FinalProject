@@ -9,6 +9,7 @@ import com.hrms.pages.DependentPageElements;
 import com.hrms.pages.EmergencyContactsPageElements;
 import com.hrms.pages.EmpQualificationPageElements;
 import com.hrms.pages.EmployeeListPageElements;
+import com.hrms.pages.EmployeeMembershipPageElements;
 import com.hrms.pages.LeaveListPageElements;
 import com.hrms.pages.LoginPageElements;
 import com.hrms.pages.PersonalDetailsPageElements;
@@ -33,6 +34,7 @@ public class PageInitializeAll extends BaseClass {
 
 	protected static TaxExemptionsPageElements taxExemptions;
 	protected static AddJobDetailssPageElements JobDetails;
+	protected static EmployeeMembershipPageElements EmpMembership;
 
 	protected static void initializeAll() {
 		login = new LoginPageElements();
@@ -50,6 +52,7 @@ public class PageInitializeAll extends BaseClass {
 		contactDetails = new ContactDetailsPageElements();
 		addEmployee = new AddEmployeePageElements();
 		JobDetails=new AddJobDetailssPageElements();
+		EmpMembership=new EmployeeMembershipPageElements();
 	
 
 	}
