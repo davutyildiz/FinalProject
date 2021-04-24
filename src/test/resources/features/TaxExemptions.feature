@@ -1,3 +1,5 @@
+
+@Smoke
 Feature: Tax Exemption
 
 Background: 
@@ -7,8 +9,7 @@ Background:
     And I find and click the employee using ID "00001"
     And I click on tax exemptions
     
-    
- @TaxExamption
+
     Scenario: 
   When I click on edit employee tax exemption
   And I select Federal income tax status  

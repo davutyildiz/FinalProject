@@ -132,7 +132,7 @@ public class EmpQualificationPageElementsSteps extends CommonMethods {
 	@When("I enter skill details")
 	public void i_enter_skill_details() throws InterruptedException {
 	Select selectSkill=new Select(empQualification.SkillCode);
-	selectSkill.selectByValue("393");
+	selectSkill.selectByValue("396");
 	 Thread.sleep(1000);
 	sendText(empQualification.SkillExpYear,"10");
 	sendText(empQualification.SkillComment,"Qualify");

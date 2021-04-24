@@ -184,6 +184,7 @@ public class CommonMethods extends PageInitializeAll {
 		return picture;
 	}
 
+	
 	/**
 	 * This method will enter text
 	 * 

@@ -1,5 +1,5 @@
-#Author: your.email@your.domain.com
-@contactDetails
+
+@Smoke
 Feature: Title of your feature
 
   Background: 
@@ -8,7 +8,7 @@ Feature: Title of your feature
     And I go to employee list
     And I find and click the employee using ID "00001"
 
-  @tag1
+ @Smoke
   Scenario: Contact Details
     When I click on Contact Details and Edit button
     And I add adress details

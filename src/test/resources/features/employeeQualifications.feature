@@ -1,5 +1,5 @@
 
-@empQual
+@Smoke
 Feature: Employee Qualifications
  As an admin I should be able to add employee qualifications
 
@@ -9,7 +9,7 @@ And I click on login button
 And I go to employee list
 And I find and click the employee using ID "00001"
 
-  @smoke
+ @Smoke
   Scenario: Add Work Experience
     When I click  on Qualification
     And I click  Add WorkExperience

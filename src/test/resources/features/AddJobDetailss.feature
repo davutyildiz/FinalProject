@@ -1,4 +1,4 @@
-@Job
+@Smoke
 Feature: Add Job Detailss
 
   Background: 

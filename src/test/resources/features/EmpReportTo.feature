@@ -1,3 +1,4 @@
+@Smoke
 Feature: Employee Assinged Supervisors
 
   Background: 
@@ -5,7 +6,7 @@ Feature: Employee Assinged Supervisors
     And I click on login button
     And I go to employee list
     And I find and click the employee using ID "00001"
-@113
+
   Scenario: Updating Employee Supervisors
     When ReportTo link
     Then I click on Add button

@@ -1,4 +1,4 @@
-
+@Smoke
 Feature: Personal Details
 
   Background: 
@@ -6,7 +6,7 @@ Feature: Personal Details
     And I click on login button
     And I go to employee list
     And I find and click the employee using ID "00001"
-
+@Smoke
   Scenario: Updating Personal Details
     When I click on edit button
     And I enter employee names
@@ -20,7 +20,7 @@ Feature: Personal Details
     And I choose file from my PC
     And I click to save attached file from my PC
 
-    @111
+   @Smoke
      Scenario: Uploding Employee Photograph
      When I click on Image at the left
      And I choose Employee Photograph
